@@ -2,28 +2,29 @@ package com.patterns.observer;
 
 import com.patterns.observer.alerts.*;
 import com.patterns.observer.weather.WeatherCentral;
+import com.patterns.observer.weather.WeatherCentralUsingJavaUtils;
 import com.patterns.observer.weather.WeatherData;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.Observable;
+import java.util.Observer;
+
 /**
  * Created by pep on 6/01/16.
  */
-public class WeatherTest {
+public class WeatherTestUsingJavaUtils {
 
-    private WeatherCentral station = new WeatherCentral();
-    private BeObserver forecastAlert = new ForecastAlert();
-    private BeObserver stateAlert = new StateAlert();
-    private BeObserver statisticsAlert = new StatisticsAlert();
-    private BeObserver heatIndexAlert = new HeatIndexAlert();
+    private WeatherCentralUsingJavaUtils station = new WeatherCentralUsingJavaUtils();
+    private Observer stateAlert = new StateAlertUsingJavaUtils();
+    private Observer statisticsAlert = new StatisticsAlertUsingJavaUtils();
 
     @Before
     public void setup()
     {
-        station.registerObserver(forecastAlert);
-        station.registerObserver(stateAlert);
-        station.registerObserver(statisticsAlert);
-        station.registerObserver(heatIndexAlert);
+
+        station.addObserver(stateAlert);
+        station.addObserver(statisticsAlert);
     }
 
     @Test
@@ -35,7 +36,7 @@ public class WeatherTest {
         station.notifyChangeWeather(afternoonData);
 
 
-        station.removeObserver(forecastAlert);
+        station.deleteObserver(statisticsAlert);
         WeatherData eveningData = new WeatherData(10, 55, 25f);
         station.notifyChangeWeather(eveningData);
 
