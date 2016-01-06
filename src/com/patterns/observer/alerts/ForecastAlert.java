@@ -26,7 +26,7 @@ public class ForecastAlert extends Alert {
         } else if (getWeatherData().getPressure() == lastPressure) {
             System.out.println("Forecast: More of the same");
         } else if (getWeatherData().getPressure()  < lastPressure) {
-            System.out.println("Forecaste: Go to worse");
+            System.out.println("Forecast: Getting worse");
         }
     }
 }

@@ -1,9 +1,6 @@
 package com.patterns.observer;
 
-import com.patterns.observer.alerts.DisplayAlert;
-import com.patterns.observer.alerts.ForecastAlert;
-import com.patterns.observer.alerts.StateAlert;
-import com.patterns.observer.alerts.StatisticsAlert;
+import com.patterns.observer.alerts.*;
 import com.patterns.observer.weather.WeatherCentral;
 import com.patterns.observer.weather.WeatherData;
 import org.junit.Before;
@@ -18,6 +15,7 @@ public class WeatherTest {
     private ForecastAlert forecastAlert = new ForecastAlert();
     private StateAlert stateAlert = new StateAlert();
     private StatisticsAlert statisticsAlert = new StatisticsAlert();
+    private HeatIndexAlert heatIndexAlert = new HeatIndexAlert();
 
     @Before
     public void setup()
@@ -25,6 +23,7 @@ public class WeatherTest {
         station.registerObserver(forecastAlert);
         station.registerObserver(stateAlert);
         station.registerObserver(statisticsAlert);
+        station.registerObserver(heatIndexAlert);
     }
 
     @Test
