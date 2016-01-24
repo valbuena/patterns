@@ -1,6 +1,7 @@
 package com.patterns.factory.simple;
 
 
+import com.patterns.factory.simple.pizzaStore.PizzaStore;
 import org.junit.Test;
 
 /**
