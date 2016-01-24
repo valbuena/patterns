@@ -1,13 +1,13 @@
-package com.patterns.observer.weather;
+package com.patterns.observer.javaBuild.weather;
 
-import com.patterns.observer.BeObservable;
+import com.patterns.observer.basicBuild.weather.WeatherData;
 
 import java.util.Observable;
 
 /**
  * Created by pep on 6/01/16.
  */
-public class WeatherCentralUsingJavaUtils extends Observable{
+public class WeatherCentral extends Observable{
 
     private WeatherData weatherData;
 

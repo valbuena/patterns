@@ -1,14 +1,14 @@
-package com.patterns.observer.alerts;
+package com.patterns.observer.javaBuild.alerts;
 
-import com.patterns.observer.BeObserver;
-import com.patterns.observer.weather.WeatherData;
+import com.patterns.observer.basicBuild.alerts.DisplayAlert;
+import com.patterns.observer.basicBuild.weather.WeatherData;
 
 import java.util.Observer;
 
 /**
  * Created by pep on 6/01/16.
  */
-public abstract class AlertUsingJavaUtils implements DisplayAlert, Observer {
+public abstract class Alert implements DisplayAlert, Observer {
 
     private WeatherData weatherData;
 

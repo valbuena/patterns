@@ -1,20 +1,19 @@
-package com.patterns.observer.alerts;
+package com.patterns.observer.javaBuild.alerts;
 
-import com.patterns.observer.weather.WeatherCentralUsingJavaUtils;
-import com.patterns.observer.weather.WeatherData;
+import com.patterns.observer.javaBuild.weather.WeatherCentral;
 
 import java.util.Observable;
 
 /**
  * Created by pep on 6/01/16.
  */
-public class StateAlertUsingJavaUtils extends AlertUsingJavaUtils {
+public class StateAlert extends Alert {
 
 
     @Override
     public void update(Observable observable, Object arg) {
-        WeatherCentralUsingJavaUtils weatherCentralUsingJavaUtils = (WeatherCentralUsingJavaUtils)observable;
-        setWeatherData(weatherCentralUsingJavaUtils.getWeatherData());
+        WeatherCentral weatherCentral = (WeatherCentral)observable;
+        setWeatherData(weatherCentral.getWeatherData());
         display();
     }
 

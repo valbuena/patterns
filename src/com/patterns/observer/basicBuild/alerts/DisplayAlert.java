@@ -1,4 +1,4 @@
-package com.patterns.observer.alerts;
+package com.patterns.observer.basicBuild.alerts;
 
 /**
  * Created by pep on 6/01/16.

@@ -1,6 +1,9 @@
-package com.patterns.observer.alerts;
+package com.patterns.observer.javaBuild.alerts;
 
-import com.patterns.observer.weather.WeatherData;
+import com.patterns.observer.javaBuild.weather.WeatherCentral;
+import com.patterns.observer.basicBuild.weather.WeatherData;
+
+import java.util.Observable;
 
 /**
  * Created by pep on 6/01/16.
@@ -10,10 +13,11 @@ public class StatisticsAlert extends Alert {
     private int numAlerts = 0;
 
     @Override
-    public void notify(Object data) {
+    public void update(Observable observable, Object arg) {
+        WeatherCentral weatherCentral = (WeatherCentral)observable;
 
         numAlerts++;
-        WeatherData dataCurrent = (WeatherData) data;
+        WeatherData dataCurrent = (WeatherData) weatherCentral.getWeatherData();
         if(this.getWeatherData() != null) {
             WeatherData dataAverage = new WeatherData(
                     getWeatherData().getTemperature() + dataCurrent.getTemperature(),

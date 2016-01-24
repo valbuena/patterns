@@ -1,6 +1,6 @@
-package com.patterns.observer.weather;
+package com.patterns.observer.basicBuild.weather;
 
-import com.patterns.observer.BeObservable;
+import com.patterns.observer.basicBuild.BeObservable;
 
 /**
  * Created by pep on 6/01/16.

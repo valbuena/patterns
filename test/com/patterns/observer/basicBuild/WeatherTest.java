@@ -1,8 +1,8 @@
-package com.patterns.observer;
+package com.patterns.observer.basicBuild;
 
-import com.patterns.observer.alerts.*;
-import com.patterns.observer.weather.WeatherCentral;
-import com.patterns.observer.weather.WeatherData;
+import com.patterns.observer.basicBuild.alerts.*;
+import com.patterns.observer.basicBuild.weather.WeatherCentral;
+import com.patterns.observer.basicBuild.weather.WeatherData;
 import org.junit.Before;
 import org.junit.Test;
 

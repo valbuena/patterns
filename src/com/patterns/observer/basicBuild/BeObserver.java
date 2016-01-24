@@ -1,4 +1,4 @@
-package com.patterns.observer;
+package com.patterns.observer.basicBuild;
 
 /**
  * Created by pep on 6/01/16.

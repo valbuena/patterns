@@ -1,23 +1,22 @@
-package com.patterns.observer;
+package com.patterns.observer.javaBuild;
 
-import com.patterns.observer.alerts.*;
-import com.patterns.observer.weather.WeatherCentral;
-import com.patterns.observer.weather.WeatherCentralUsingJavaUtils;
-import com.patterns.observer.weather.WeatherData;
+import com.patterns.observer.javaBuild.alerts.StateAlert;
+import com.patterns.observer.javaBuild.alerts.StatisticsAlert;
+import com.patterns.observer.javaBuild.weather.WeatherCentral;
+import com.patterns.observer.basicBuild.weather.WeatherData;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.Observable;
 import java.util.Observer;
 
 /**
  * Created by pep on 6/01/16.
  */
-public class WeatherTestUsingJavaUtils {
+public class WeatherTest {
 
-    private WeatherCentralUsingJavaUtils station = new WeatherCentralUsingJavaUtils();
-    private Observer stateAlert = new StateAlertUsingJavaUtils();
-    private Observer statisticsAlert = new StatisticsAlertUsingJavaUtils();
+    private WeatherCentral station = new WeatherCentral();
+    private Observer stateAlert = new StateAlert();
+    private Observer statisticsAlert = new StatisticsAlert();
 
     @Before
     public void setup()

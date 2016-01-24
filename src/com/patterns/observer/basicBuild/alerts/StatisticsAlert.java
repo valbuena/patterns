@@ -1,23 +1,19 @@
-package com.patterns.observer.alerts;
+package com.patterns.observer.basicBuild.alerts;
 
-import com.patterns.observer.weather.WeatherCentralUsingJavaUtils;
-import com.patterns.observer.weather.WeatherData;
-
-import java.util.Observable;
+import com.patterns.observer.basicBuild.weather.WeatherData;
 
 /**
  * Created by pep on 6/01/16.
  */
-public class StatisticsAlertUsingJavaUtils extends AlertUsingJavaUtils {
+public class StatisticsAlert extends Alert {
 
     private int numAlerts = 0;
 
     @Override
-    public void update(Observable observable, Object arg) {
-        WeatherCentralUsingJavaUtils weatherCentralUsingJavaUtils = (WeatherCentralUsingJavaUtils)observable;
+    public void notify(Object data) {
 
         numAlerts++;
-        WeatherData dataCurrent = (WeatherData) weatherCentralUsingJavaUtils.getWeatherData();
+        WeatherData dataCurrent = (WeatherData) data;
         if(this.getWeatherData() != null) {
             WeatherData dataAverage = new WeatherData(
                     getWeatherData().getTemperature() + dataCurrent.getTemperature(),
