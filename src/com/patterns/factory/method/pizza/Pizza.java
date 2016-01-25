@@ -1,15 +1,14 @@
 package com.patterns.factory.method.pizza;
 
-import com.patterns.factory.simple.pizza.Pizza;
 
 import java.util.List;
 
 /**
  * Created by pep on 24/01/16.
  */
-public class PizzaFranchise extends Pizza {
+public class Pizza {
 
-    enum Dough {THIN, CRUST, EXTRA_THICK};
+    enum Dough {THIN, EXTRA_THICK};
     enum Sauce {MARINARA, PLUM_TOMATO};
     enum Topping {REGGIANO_CHEESE, MOZZARELLA_CHEESE};
 

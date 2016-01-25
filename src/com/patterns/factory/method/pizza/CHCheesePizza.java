@@ -1,13 +1,11 @@
 package com.patterns.factory.method.pizza;
 
-import com.patterns.factory.simple.pizza.CheesePizza;
-
 import java.util.Collections;
 
 /**
  * Created by pep on 24/01/16.
  */
-public class CHCheesePizza extends PizzaFranchise {
+public class CHCheesePizza extends Pizza {
     public CHCheesePizza(){
         setName("CHICAGO Cheese Pizza");
         setDough(Dough.EXTRA_THICK);
