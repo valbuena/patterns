@@ -64,3 +64,19 @@ interfaces
 - We define a adapter que implements A and call B
 
 Example: Use enumeration like iterator
+
+##Facade:
+Provides a unified interface to a set of interfaces in a subsystem. Facade defines a higher-level
+interface that makes the subsystem easier to use.
+
+- We have several classes with complex logic
+- We create a class to unified this complex logic in one method call.
+
+##Template:
+Defines the skeleton of an algorithm in a method, deferring some steps to subclasses.
+Template Method lets subclasses redefine certain steps of an algorithm without changing the
+algorithm's structure.
+
+- We have a method which calls other methods like an algorithm
+- Other methods can be general o can be redefined by concrete class.
+- Use the principle : don't call us, we'll call you
