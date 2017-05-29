@@ -65,14 +65,14 @@ interfaces
 
 Example: Use enumeration like iterator
 
-##Facade:
+## Facade:
 Provides a unified interface to a set of interfaces in a subsystem. Facade defines a higher-level
 interface that makes the subsystem easier to use.
 
 - We have several classes with complex logic
 - We create a class to unified this complex logic in one method call.
 
-##Template:
+## Template:
 Defines the skeleton of an algorithm in a method, deferring some steps to subclasses.
 Template Method lets subclasses redefine certain steps of an algorithm without changing the
 algorithm's structure.
