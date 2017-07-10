@@ -80,3 +80,9 @@ algorithm's structure.
 - We have a method which calls other methods like an algorithm
 - Other methods can be general o can be redefined by concrete class.
 - Use the principle : don't call us, we'll call you
+
+## Iterator:
+Provides a way to access the elements of an aggregate object sequentially without exposing its underlying 
+representation.
+
+- A interface to loop elements without we know their implementation
