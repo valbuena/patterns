@@ -6,22 +6,19 @@ import java.util.List;
 
 public class ListToIterator implements Iterator<Object>{
 
-    List<Object> list;
-    int position = 0;
+    Iterator list;
 
     public ListToIterator(List list) {
-        this.list = list;
+        this.list = list.iterator();
     }
 
     @Override
     public boolean hasNext() {
-        return (position < list.size() && list.get(position) != null);
+        return list.hasNext();
     }
 
     @Override
     public Object next() {
-        Object element = list.get(position);
-        position++;
-        return element;
+        return list.next();
     }
 }
