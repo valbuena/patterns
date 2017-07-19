@@ -92,3 +92,10 @@ Allows you to compose objects into tree structures to represent part-whole hiera
 clients treat individual objects and compositions of objects uniformly.
 
 - Organizate data like a tree
+
+## State:
+Allows an object to alter its behavior when its internal state changes. The object will
+appear to change its class.
+
+- When the code have different behaviour by state
+
