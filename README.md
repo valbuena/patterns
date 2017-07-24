@@ -99,3 +99,10 @@ appear to change its class.
 
 - When the code have different behaviour by state
 
+## Proxy:
+Provides a surrogate or placeholder for another object to control access to it.
+Remote proxy controls access to a remote object
+Virtual proxy controls access to a resource that is expensive to create
+Proteccion proxy controls access to a resource based on access rights
+
+- To use a object we use behind an another object (proxy)
