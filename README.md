@@ -106,3 +106,5 @@ Virtual proxy controls access to a resource that is expensive to create
 Proteccion proxy controls access to a resource based on access rights
 
 - To use a object we use behind an another object (proxy)
+remote (you can access object in another machines)
+virtual (you can control when you create an instance)
